@@ -55,5 +55,7 @@ namespace Behold_the_watcher
                     }
             }
         }
+
+        public static int RandomDirection => new Random().Next(0, 5);
     }
 }

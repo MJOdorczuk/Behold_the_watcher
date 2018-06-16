@@ -26,6 +26,12 @@ namespace Behold_the_watcher
             return hall;
         }
 
+        private static Func<Room> RandomLevel(int halls, int opponents)
+        {
+
+            return null;
+        }
+
         public static Func<Room> GenericGenerator()
         {
             return () => LevelGenerator.GenericLevel();

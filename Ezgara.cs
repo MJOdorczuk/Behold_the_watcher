@@ -57,10 +57,11 @@ namespace Behold_the_watcher
         private bool Run(Room hall)
         {
             bool escaped = false;
-            int shift = new Random().Next(5);
+            int shift = Direction.RandomDirection;
+            int tries = new Random().Next(6);
             Door way_out;
             Room next;
-            for(int i = 0; i < new Random().Next(6);)
+            for(int i = 0; i < tries; i++)
             {
                 for (int j = 0; j < 6; j++)
                 {
